@@ -30,7 +30,7 @@ class CharacterList extends Component {
 }
 
 const mapStateToProps = (state) => {
-    console.log('state', state);
+    //console.log('state', state);
     return {
         characters: state.characters
     };
