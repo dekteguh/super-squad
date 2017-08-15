@@ -1,14 +1,14 @@
 import { ADD_CHARACTER } from '../actions';
 import { createCharacter } from './helpers';
 
-const heros = (state = [], action) => {
+const heroes = (state = [], action) => {
   switch (action.type) {
     case ADD_CHARACTER:
-      let heros = [...state, createCharacter(action.id)];
-      return heros;
+      let heroes = [...state, createCharacter(action.id)];
+      return heroes;
     default:
       return state;
   }
 };
 
-export default heros;
+export default heroes;
